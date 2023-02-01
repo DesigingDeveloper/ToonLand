@@ -4,6 +4,16 @@
     src: url(/fonts/AnisaSans.ttf);
 }
 
+@font-face {
+    font-family: mySecondFont;
+    src: url(/fonts/sassoon/SassoonSansStd-Medium.otf);
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
 .landing-page {
     position: relative;
 }
@@ -21,7 +31,7 @@
     z-index: 100;
     top: 9rem;
     position: absolute;
-    font-family: myFirstFont;
+    font-family: mySecondFont;
 }
 
 .logo-typo {
@@ -34,7 +44,7 @@
 .hero {
     position: absolute;
     top: 0%;
-    width: 92rem;
+    width: 100%;
     min-height: 0%;
     z-index: -976;
 }

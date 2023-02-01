@@ -1,5 +1,3 @@
-/* fashion section start */
-
 .fashion_section {
     width: 100%;
     float: center;
@@ -14,9 +12,10 @@
 .fashion_taital {
     width: 100%;
     font-size: 40px;
-    color: #30302e;
+    color: #ffffff;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
+    margin-top: 2.5rem;
 }
 
 .fashion_section_2 {
@@ -37,7 +36,7 @@
 .shirt_text {
     width: 100%;
     font-size: 20px;
-    color: #30302e;
+    color: #ffffff;
     text-align: center;
     font-weight: bold;
     padding-bottom: 5px;
@@ -45,10 +44,15 @@
 
 .price_text {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     color: #f26522;
     text-align: center;
     margin: 0px;
+}
+
+.price_text span {
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .tshirt_img {
@@ -80,6 +84,7 @@
 .buy_bt a:hover {
     background-color: transparent;
     color: #262626;
+    text-decoration: none;
 }
 
 .seemore_bt {
@@ -98,7 +103,8 @@
 
 .seemore_bt a:hover {
     background-color: transparent;
-    color: #f26522;
+    color: #f2228a;
+    text-decoration: none;
 }
 
 #main_slider a.carousel-control-next {
