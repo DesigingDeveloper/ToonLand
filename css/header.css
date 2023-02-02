@@ -14,37 +14,27 @@ body {
     padding: 0%;
 }
 
-.landing-page {
-    position: relative;
-}
 
-.logo {
-    width: 8rem;
-    min-height: 0%;
-    z-index: 100;
-    position: absolute;
+/* .landing-page {
+    position: relative;
+} */
+
+.hero {
+    width: 100%;
+    height: auto;
 }
 
 .sub-text {
     color: white;
     font-size: 3rem;
-    z-index: 100;
-    top: 9rem;
-    position: absolute;
     font-family: mySecondFont;
+    position: absolute;
+    top: 4rem;
 }
 
 .logo-typo {
     width: 35rem;
-    top: 12rem;
-    z-index: 100;
+    height: auto;
     position: absolute;
-}
-
-.hero {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    min-height: 0%;
-    z-index: -976;
+    top: 10.5rem;
 }
