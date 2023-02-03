@@ -1,3 +1,14 @@
+@import url('/ToonLand/fonts/AnisaSans.ttf');
+@font-face {
+    font-family: myFirstFont;
+    src: url(/fonts/AnisaSans.ttf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(/fonts/sassoon/SassoonSansStd-Medium.otf);
+}
+
 .fashion_section {
     width: 100%;
     float: center;
