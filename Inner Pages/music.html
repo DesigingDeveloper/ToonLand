@@ -30,11 +30,14 @@
 
     <!-- Sidebar CDN -->
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 
     <!-- ========Main Sheets============= -->
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/characterSheet.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/music.css">
 
 </head>
 
@@ -53,15 +56,46 @@
     <!--================ End Header Area =================-->
 
     <!-- ==============Start landing page =============== -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="/Assets/music-landing-page.png" alt="" srcset="" width="100%" height="100%">
-            </div>
+    <div class="container-fluid">
+        <div class="row justify-content-md-right">
+            <img src="/Assets/music-landing-page.png" alt="" srcset="" width="100%" height="100%">
         </div>
     </div>
 
     <!-- ==============End landing page =============== -->
+
+    <!--============= Start Music Player ===============-->
+    <div class="container">
+        <h1 class="heading"></h1>
+        <div class="music-container">
+            <div id="cover-box">
+                <img src="assets/images/cover3.jpg" alt="cover-image" id="cover" />
+            </div>
+            <div id="music-box">
+                <audio id="disc"></audio>
+                <div id="music-info">
+                    <h2 id="title"></h2>
+                    <h3 id="artist"></h3>
+                    <div id="progress-container">
+                        <div id="progress"></div>
+                    </div>
+                    <div id="timer-bar">
+                        <span id="timer">0:00</span>
+                        <span id="duration"></span>
+                    </div>
+                </div>
+                <div id="control-box">
+                    <i id="prev" class="btn fas fa-backward"></i>
+                    <i id="play" class="special-btn fas fa-play"></i>
+                    <i id="next" class="btn fas fa-forward"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--============= End Music Player ===============-->
+
+    <!-- Scripts -->
+    <script src="/scripts/music.js"></script>
 
 </body>
 
