@@ -66,32 +66,27 @@
 
     <!--============= Start Music Player ===============-->
     <div class="container">
-        <h1 class="heading"></h1>
-        <div class="music-container">
-            <div id="cover-box">
-                <img src="assets/images/cover3.jpg" alt="cover-image" id="cover" />
-            </div>
-            <div id="music-box">
-                <audio id="disc"></audio>
-                <div id="music-info">
-                    <h2 id="title"></h2>
-                    <h3 id="artist"></h3>
-                    <div id="progress-container">
-                        <div id="progress"></div>
+        <div class="row">
+            <div id='card'>
+                <div id='display'>
+                    <div id='header'>
+                        <h1 id='title'></h1>
+                        <p>
+                            <span id='song_title'></span>
+                        </p>
                     </div>
-                    <div id="timer-bar">
-                        <span id="timer">0:00</span>
-                        <span id="duration"></span>
+                    <div id='image'>
+                        <img src='' alt='' id='art' />
                     </div>
+                    <audio controls src='' id='audio'>
+                    </audio>
                 </div>
-                <div id="control-box">
-                    <i id="prev" class="btn fas fa-backward"></i>
-                    <i id="play" class="special-btn fas fa-play"></i>
-                    <i id="next" class="btn fas fa-forward"></i>
+                <div id='list'>
                 </div>
             </div>
         </div>
     </div>
+
     <!--============= End Music Player ===============-->
 
     <!-- Scripts -->

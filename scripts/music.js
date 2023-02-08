@@ -1,145 +1,74 @@
-const cover = document.getElementById('cover');
-const disc = document.getElementById('disc');
-const title = document.getElementById('title');
-const artist = document.getElementById('artist');
-const progressContainer = document.getElementById('progress-container');
-const progress = document.getElementById('progress');
-const timer = document.getElementById('timer');
-const duration = document.getElementById('duration');
-const prev = document.getElementById('prev');
-const play = document.getElementById('play');
-const next = document.getElementById('next');
-let songIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    /*
+      All audio and images curtosey of archive.org. What a solid website!
+    */
+    const src = [
+        [
+            "John Coltrane", "My Favorite Things", "https://ia803202.us.archive.org/10/items/cd_john-coltrane-my-favorite-things_john-coltrane/disc1/01.%20John%20Coltrane%20-%20My%20Favorite%20Things_sample.mp3", "https://upload.wikimedia.org/wikipedia/en/9/9b/My_Favorite_Things.jpg"
+        ],
+        [
+            "Stan Getz", "Winter Wonderland", "https://ia800100.us.archive.org/20/items/cd_west-coast-live_stan-getz-chet-baker/disc1/01.06.%20Stan%20Getz;%20Chet%20Baker%20-%20Winter%20Wonderland_sample.mp3",
+            "https://ia800100.us.archive.org/20/items/cd_west-coast-live_stan-getz-chet-baker/cd_west-coast-live_stan-getz-chet-baker_itemimage.png"
+        ],
+        [
+            "Monty Alexander", "Pure Imagination", "https://ia800107.us.archive.org/9/items/cd_steamin_monty-alexander/disc1/01.%20Monty%20Alexander%20-%20Pure%20Imagination_sample.mp3", "https://ia800107.us.archive.org/9/items/cd_steamin_monty-alexander/cd_steamin_monty-alexander_itemimage.png"
+        ],
+        [
+            "Ella Fitzgerald", "Sleigh Ride", "https://ia800801.us.archive.org/27/items/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald/disc1/05.%20Ella%20Fitzgerald%20-%20Sleigh%20Ride_sample.mp3", "https://ia800801.us.archive.org/27/items/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald_itemimage.png"
+        ],
+        [
+            "Dave Brubeck", "Greensleeves", "https://ia800705.us.archive.org/16/items/cd_a-dave-brubeck-christmas_dave-brubeck/disc1/07.%20Dave%20Brubeck%20-%20What%20Child%20Is%20This_%20%28Greensleeves%29_sample.mp3", "https://ia800705.us.archive.org/16/items/cd_a-dave-brubeck-christmas_dave-brubeck/cd_a-dave-brubeck-christmas_dave-brubeck_itemimage.png"
+        ]
+    ];
 
-// Songs info
-const songs = [
-    {
-        title: 'Toonland Song',
-        artist: 'Toonland',
-        coverPath: '/Assets/comic-dummy-cover-page.png',
-        discPath: '/music/music1.mp3',
-        duration: '1:33',
-    },
-    {
-        title: 'Dance with Me',
-        artist: 'Ahjay Stelino',
-        coverPath: 'assets/images/cover2.jpg',
-        discPath: 'assets/music/music2.mp3',
-        duration: '2:22',
-    },
-    {
-        title: 'Gimme that Bottle',
-        artist: 'Michael Ramir',
-        coverPath: 'assets/images/cover3.jpg',
-        discPath: 'assets/music/music3.mp3',
-        duration: '1:54',
-    },
-];
+    for (x = 0; x < src.length; x++) {
+        var s = src[x];
+        var number = parseInt(x) + 1;
+        var artist = document.createTextNode(number + ": " + s[0]);
+        var track_name = document.createTextNode(s[1]);
 
-// Load song initially
-loadSong(songs[songIndex]);
+        var listItem = document.createElement('div');
+        var artist_text = document.createElement('h3');
+        var track_text = document.createElement('p');
 
-// Load the given song
-function loadSong(song) {
-    cover.src = song.coverPath;
-    disc.src = song.discPath;
-    title.textContent = song.title;
-    artist.textContent = song.artist;
-    duration.textContent = song.duration;
-}
+        artist_text.appendChild(artist);
+        track_text.appendChild(track_name);
 
-// Toggle play and pause
-function playPauseMedia() {
-    if (disc.paused) {
-        disc.play();
-    } else {
-        disc.pause();
+        listItem.appendChild(artist_text);
+        listItem.appendChild(track_text);
+
+        listItem.classList.add('item');
+        listItem.dataset.index = x;
+
+        document.getElementById('list').appendChild(listItem);
     }
-}
+    displayTrack(0);
 
-// Update icon
-function updatePlayPauseIcon() {
-    if (disc.paused) {
-        play.classList.remove('fa-pause');
-        play.classList.add('fa-play');
-    } else {
-        play.classList.remove('fa-play');
-        play.classList.add('fa-pause');
+    var listItems = document.querySelectorAll('.item');
+    listItems.forEach(el => {
+        el.onclick = () => {
+            displayTrack(el.dataset.index);
+        };
+    });
+
+    function displayTrack(x) {
+        var active = document.querySelector('.is-active');
+        if (active) {
+            active.classList.remove('is-active');
+        }
+        var el = document.getElementById('list').children[x];
+        el.classList.add('is-active');
+        var s = src[x],
+            artist = s[0],
+            track = s[1],
+            audio = s[2],
+            img = s[3],
+            number = parseInt(x) + 1;
+        document.getElementById('title').innerText = number + ": " + artist;
+        document.getElementById('song_title').innerText = track;
+        var albumArt = document.getElementById('art');
+        albumArt.src = img;
+        albumArt.alt = artist + " " + track;
+        document.getElementById('audio').src = audio;
     }
-}
-
-// Update progress bar
-function updateProgress() {
-    progress.style.width = (disc.currentTime / disc.duration) * 100 + '%';
-
-    let minutes = Math.floor(disc.currentTime / 60);
-    let seconds = Math.floor(disc.currentTime % 60);
-    if (seconds < 10) {
-        seconds = '0' + seconds;
-    }
-    timer.textContent = `${minutes}:${seconds}`;
-}
-
-// Reset the progress
-function resetProgress() {
-    progress.style.width = 0 + '%';
-    timer.textContent = '0:00';
-}
-
-// Go to previous song
-function gotoPreviousSong() {
-    if (songIndex === 0) {
-        songIndex = songs.length - 1;
-    } else {
-        songIndex = songIndex - 1;
-    }
-
-    const isDiscPlayingNow = !disc.paused;
-    loadSong(songs[songIndex]);
-    resetProgress();
-    if (isDiscPlayingNow) {
-        playPauseMedia();
-    }
-}
-
-// Go to next song
-function gotoNextSong(playImmediately) {
-    if (songIndex === songs.length - 1) {
-        songIndex = 0;
-    } else {
-        songIndex = songIndex + 1;
-    }
-
-    const isDiscPlayingNow = !disc.paused;
-    loadSong(songs[songIndex]);
-    resetProgress();
-    if (isDiscPlayingNow || playImmediately) {
-        playPauseMedia();
-    }
-}
-
-// Change song progress when clicked on progress bar
-function setProgress(ev) {
-    const totalWidth = this.clientWidth;
-    const clickWidth = ev.offsetX;
-    const clickWidthRatio = clickWidth / totalWidth;
-    disc.currentTime = clickWidthRatio * disc.duration;
-}
-
-// Play/Pause when play button clicked
-play.addEventListener('click', playPauseMedia);
-
-// Various events on disc
-disc.addEventListener('play', updatePlayPauseIcon);
-disc.addEventListener('pause', updatePlayPauseIcon);
-disc.addEventListener('timeupdate', updateProgress);
-disc.addEventListener('ended', gotoNextSong.bind(null, true));
-
-// Go to next song when next button clicked
-prev.addEventListener('click', gotoPreviousSong);
-
-// Go to previous song when previous button clicked
-next.addEventListener('click', gotoNextSong.bind(null, false));
-
-// Move to different place in the song
-progressContainer.addEventListener('click', setProgress);
+})
