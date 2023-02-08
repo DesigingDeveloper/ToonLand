@@ -1,4 +1,5 @@
 @import url('/ToonLand/fonts/AnisaSans.ttf');
+
 @font-face {
     font-family: myFirstFont;
     src: url(/fonts/AnisaSans.ttf);
@@ -21,11 +22,11 @@
 
 .fashion_taital {
     width: 100%;
-    font-size: 40px;
+    font-size: 70px;
     color: #ffffff;
     text-align: center;
     font-weight: bolder;
-    margin-top: 2.5rem;
+    margin-top: 8.5rem;
 }
 
 .fashion_section_2 {
