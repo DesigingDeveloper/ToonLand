@@ -27,7 +27,7 @@
     height: 60px;
     color: white;
     font-size: 25px;
-    line-height: 60px;
+    line-height: 40px;
     text-align: center;
     transition: all linear 0.2s;
     -webkit-transform: scaleX(-1);
