@@ -34,11 +34,11 @@
     transform: scaleX(-1);
 }
 
-.s-item:hover {
+/* .s-item:hover {
     width: 110px;
     color: white;
     border-radius: 0px 0px 0px 0px;
-}
+} */
 
 #so-open {
     position: fixed;
