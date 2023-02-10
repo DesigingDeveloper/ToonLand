@@ -29,9 +29,9 @@
     font-size: 25px;
     line-height: 40px;
     text-align: center;
-    transition: all linear 0.2s;
+    /* transition: all linear 0.2s;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    transform: scaleX(-1); */
 }
 
 /* .s-item:hover {
