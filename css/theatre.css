@@ -1,0 +1,21 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.main-video {
+    position: absolute;
+    top: 12rem;
+    left: 16rem;
+    border-radius: 1rem;
+}
+
+.main-video iframe {
+    border: 1rem;
+    border-radius: 1rem;
+    border-color: white;
+}
+
+.main-video h4 {
+    color: white;
+}
