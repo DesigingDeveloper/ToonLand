@@ -99,13 +99,13 @@
 }
 
 .powered img {
-    width: 16rem;
+    width: 1rem;
 }
 
 .links {
     position: absolute;
     right: 9rem;
-    bottom: 20%;
+    bottom: 10%;
 }
 
 .links ul li {

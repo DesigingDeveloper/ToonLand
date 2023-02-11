@@ -3,6 +3,12 @@
     padding: 0%;
 }
 
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
 .main-video {
     position: absolute;
     top: 12rem;
@@ -18,4 +24,8 @@
 
 .main-video h4 {
     color: white;
+}
+
+.video-section {
+    margin-top: 4rem;
 }

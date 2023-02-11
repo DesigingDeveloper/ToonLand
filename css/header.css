@@ -50,14 +50,3 @@ body {
 .tour-button {
     margin-top: 3rem;
 }
-
-.powered img {
-    width: 0.09rem;
-    height: 4rem;
-
-}
-
-.powered {
-    position: absolute;
-    margin-top: -4rem;
-}
