@@ -86,20 +86,26 @@
 }
 
 .footer .copyright {
-    text-align: center;
-    padding-top: 24px;
+    /* padding-top: 35px; */
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+    padding-left: 9rem;
 }
 
 .powered {
     width: 100%;
     height: auto;
+    /* padding-top: 35px; */
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-left: 11rem;
 }
 
 .powered img {
-    width: 1rem;
+    width: 7rem;
+    opacity: 0;
 }
 
 .links {
