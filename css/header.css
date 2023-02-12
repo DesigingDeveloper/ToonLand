@@ -48,5 +48,8 @@ body {
 }
 
 .tour-button {
-    margin-top: 3rem;
+    position: absolute;
+    top: 40rem;
+    width: 21rem;
+    left: 37rem;
 }
