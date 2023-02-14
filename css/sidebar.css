@@ -79,7 +79,7 @@
 @media only screen and (max-width: 600px) {
     .s-soft {
         position: fixed;
-        top: 150px;
+        top: 60px;
         left: 10;
         z-index: 1000;
         transition: all linear 0.2s;
@@ -102,9 +102,8 @@
 
     .s-item {
         display: block;
-        width: 40px;
-        height: 20px;
-        color: white;
+        width: 35px;
+        height: 45px;
         font-size: 25px;
         line-height: 40px;
         text-align: center;
@@ -121,32 +120,6 @@
         transition: all linear 0.2s;
     }
 
-    .facebook {
-        background-color: #ffffff00;
-    }
 
-    .twitter {
-        background-color: #ffffff00;
-    }
-
-    .print {
-        background-color: #ffffff00;
-    }
-
-    .pinterest {
-        background-color: #ffffff00;
-    }
-
-    .linkedin {
-        background-color: #ffffff00;
-    }
-
-    .instagram {
-        background-color: #ffffff00;
-    }
-
-    .so-collapse {
-        left: -60px;
-    }
 
 }
