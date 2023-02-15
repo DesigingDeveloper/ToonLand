@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     */
     const src = [
         [
-            "John Coltrane", "My Favorite Things", "https://ia803202.us.archive.org/10/items/cd_john-coltrane-my-favorite-things_john-coltrane/disc1/01.%20John%20Coltrane%20-%20My%20Favorite%20Things_sample.mp3", "https://upload.wikimedia.org/wikipedia/en/9/9b/My_Favorite_Things.jpg"
+            "John Coltrane", "My Favorite Things", "E:\ToonLand\ToonLand\music\Tales of toonland theme song.mp3", "E:\ToonLand\ToonLand\Assets\Untitled_Artwork (8).png"
         ],
         [
             "Stan Getz", "Winter Wonderland", "https://ia800100.us.archive.org/20/items/cd_west-coast-live_stan-getz-chet-baker/disc1/01.06.%20Stan%20Getz;%20Chet%20Baker%20-%20Winter%20Wonderland_sample.mp3",
