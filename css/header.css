@@ -15,7 +15,6 @@ body {
     padding: 0%;
     font-family: mySecondFont;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 /* .landing-page {
@@ -60,6 +59,10 @@ body {
     top: 10.5rem;
 }
 
+.scrolling {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
 .tour-button {
     position: absolute;
@@ -98,8 +101,6 @@ body {
         margin: 0%;
         padding: 0%;
         font-family: mySecondFont;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
 
     * {
