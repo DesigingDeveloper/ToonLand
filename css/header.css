@@ -10,14 +10,13 @@
     src: url(/fonts/sassoon/SassoonSansStd-Medium.otf);
 }
 
-
 body {
     margin: 0%;
     padding: 0%;
     font-family: mySecondFont;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
-
 
 /* .landing-page {
     position: relative;
@@ -100,6 +99,7 @@ body {
         padding: 0%;
         font-family: mySecondFont;
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     * {
