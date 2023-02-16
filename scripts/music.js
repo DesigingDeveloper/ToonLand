@@ -4,20 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     */
     const src = [
         [
-            "ToonLand Theme Song", "Mentor Mahesh", "E:\ToonLand\ToonLand\music\Tales of toonland theme song.mp3", "http://127.0.0.1:5501/Assets/music-landing-page.png"
+            "ToonLand Theme Song", "Mentor Mahesh", "https://sparkly-lily-aab07e.netlify.app/music/Tales%20of%20toonland%20theme%20song.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
             "Stan Getz", "Winter Wonderland", "https://ia800100.us.archive.org/20/items/cd_west-coast-live_stan-getz-chet-baker/disc1/01.06.%20Stan%20Getz;%20Chet%20Baker%20-%20Winter%20Wonderland_sample.mp3",
-            "https://ia800100.us.archive.org/20/items/cd_west-coast-live_stan-getz-chet-baker/cd_west-coast-live_stan-getz-chet-baker_itemimage.png"
+            "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
-            "Monty Alexander", "Pure Imagination", "https://ia800107.us.archive.org/9/items/cd_steamin_monty-alexander/disc1/01.%20Monty%20Alexander%20-%20Pure%20Imagination_sample.mp3", "https://ia800107.us.archive.org/9/items/cd_steamin_monty-alexander/cd_steamin_monty-alexander_itemimage.png"
+            "Monty Alexander", "Pure Imagination", "https://ia800107.us.archive.org/9/items/cd_steamin_monty-alexander/disc1/01.%20Monty%20Alexander%20-%20Pure%20Imagination_sample.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
-            "Ella Fitzgerald", "Sleigh Ride", "https://ia800801.us.archive.org/27/items/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald/disc1/05.%20Ella%20Fitzgerald%20-%20Sleigh%20Ride_sample.mp3", "https://ia800801.us.archive.org/27/items/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald_itemimage.png"
+            "Ella Fitzgerald", "Sleigh Ride", "https://ia800801.us.archive.org/27/items/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald/disc1/05.%20Ella%20Fitzgerald%20-%20Sleigh%20Ride_sample.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
-            "Dave Brubeck", "Greensleeves", "https://ia800705.us.archive.org/16/items/cd_a-dave-brubeck-christmas_dave-brubeck/disc1/07.%20Dave%20Brubeck%20-%20What%20Child%20Is%20This_%20%28Greensleeves%29_sample.mp3", "https://ia800705.us.archive.org/16/items/cd_a-dave-brubeck-christmas_dave-brubeck/cd_a-dave-brubeck-christmas_dave-brubeck_itemimage.png"
+            "Dave Brubeck", "Greensleeves", "https://ia800705.us.archive.org/16/items/cd_a-dave-brubeck-christmas_dave-brubeck/disc1/07.%20Dave%20Brubeck%20-%20What%20Child%20Is%20This_%20%28Greensleeves%29_sample.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ]
     ];
 
