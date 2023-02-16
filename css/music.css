@@ -11,7 +11,7 @@
 #card #display {
     width: 60%;
     border-radius: 20px 0 0 20px;
-    background: rgba(239, 179, 179, 0.5);
+    background: rgba(32, 157, 246, 0.5);
     backdrop-filter: blur(30px) hue-rotate(20deg);
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 #title {
-    font-size: 3rem;
+    font-size: 3 rem;
 }
 
 #card #display>* {
@@ -40,6 +40,7 @@
     background: transparent;
     display: flex;
     flex-direction: column;
+    font-size: 2rem;
 }
 
 #card #list .item {
@@ -57,7 +58,7 @@
 }
 
 #card #list .item.is-active {
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.797);
     backdrop-filter: blur(30px) hue-rotate(20deg);
     transition: all 0.3s ease;
 }
@@ -70,18 +71,19 @@
 @media only screen and (max-width: 600px) {
     #card {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         border-radius: 20px;
         box-shadow: 0 0 20px rgba(0, 0, 0, .1);
         margin: 1rem;
-        padding: 2rem;
+        padding: 1rem;
         width: 100%;
     }
 
     #card #display {
-        width: 40%;
+        width: 160%;
         border-radius: 20px 0 0 20px;
-        background: rgba(239, 179, 179, 0.5);
+        background: rgba(32, 157, 246, 0.5);
         backdrop-filter: blur(30px) hue-rotate(20deg);
         display: flex;
         flex-direction: column;
@@ -95,13 +97,14 @@
     }
 
     #card #display #art {
-        height: 300px;
+        height: 100px;
         border-radius: 20px 20px 20px 20px;
         margin-bottom: 2rem;
+        font-size: 1rem;
     }
 
     #card #list {
-        width: 40%;
+        width: 100%;
         border-radius: 0 20px 20px 0;
         background: transparent;
         display: flex;
@@ -112,6 +115,7 @@
         padding: 0 1em;
         background: white;
         transition: all 0.3s ease;
+        font-size: 0.8rem;
     }
 
     #card #list .item:first-of-type {
@@ -132,4 +136,11 @@
         cursor: pointer;
         background: rgb(209, 201, 201);
     }
+
+    #title {
+        font-size: 1rem;
+    }
+
+
+
 }

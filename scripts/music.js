@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
             "ToonLand Theme Song", "Mentor Mahesh", "https://sparkly-lily-aab07e.netlify.app/music/Tales%20of%20toonland%20theme%20song.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
-            "Stan Getz", "Winter Wonderland", "https://ia800100.us.archive.org/20/items/cd_west-coast-live_stan-getz-chet-baker/disc1/01.06.%20Stan%20Getz;%20Chet%20Baker%20-%20Winter%20Wonderland_sample.mp3",
+            "phone song with beats", "Lulu", "https://sparkly-lily-aab07e.netlify.app/music/phone%20song%20with%20beats.mp3",
             "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
-            "Monty Alexander", "Pure Imagination", "https://ia800107.us.archive.org/9/items/cd_steamin_monty-alexander/disc1/01.%20Monty%20Alexander%20-%20Pure%20Imagination_sample.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
+            "fifi and nubby with beats", "Fifi & Nubby", "https://sparkly-lily-aab07e.netlify.app/music/fifi%20and%20nubby%20with%20beats.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
-            "Ella Fitzgerald", "Sleigh Ride", "https://ia800801.us.archive.org/27/items/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald/disc1/05.%20Ella%20Fitzgerald%20-%20Sleigh%20Ride_sample.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
+            "kuma song with beats", "Kuma", "https://ia800801.us.archive.org/27/items/cd_ella-wishes-you-a-swinging-christmas_ella-fitzgerald/disc1/05.%20Ella%20Fitzgerald%20-%20Sleigh%20Ride_sample.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ],
         [
-            "Dave Brubeck", "Greensleeves", "https://ia800705.us.archive.org/16/items/cd_a-dave-brubeck-christmas_dave-brubeck/disc1/07.%20Dave%20Brubeck%20-%20What%20Child%20Is%20This_%20%28Greensleeves%29_sample.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
+            "nala song with beats", "Nala", "https://sparkly-lily-aab07e.netlify.app/music/nala%20song%20with%20beats.mp3", "https://sparkly-lily-aab07e.netlify.app/Assets/toonland-music-thumbnail.png"
         ]
     ];
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var track_name = document.createTextNode(s[1]);
 
         var listItem = document.createElement('div');
-        var artist_text = document.createElement('h3');
+        var artist_text = document.createElement('p');
         var track_text = document.createElement('p');
 
         artist_text.appendChild(artist);
