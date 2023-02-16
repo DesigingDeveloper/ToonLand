@@ -20,6 +20,10 @@
     padding: 1em;
 }
 
+#title {
+    font-size: 3rem;
+}
+
 #card #display>* {
     text-align: center;
 }

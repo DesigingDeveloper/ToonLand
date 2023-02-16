@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     */
     const src = [
         [
-            "John Coltrane", "My Favorite Things", "E:\ToonLand\ToonLand\music\Tales of toonland theme song.mp3", "E:\ToonLand\ToonLand\Assets\Untitled_Artwork (8).png"
+            "ToonLand Theme Song", "Mentor Mahesh", "E:\ToonLand\ToonLand\music\Tales of toonland theme song.mp3", "http://127.0.0.1:5501/Assets/music-landing-page.png"
         ],
         [
             "Stan Getz", "Winter Wonderland", "https://ia800100.us.archive.org/20/items/cd_west-coast-live_stan-getz-chet-baker/disc1/01.06.%20Stan%20Getz;%20Chet%20Baker%20-%20Winter%20Wonderland_sample.mp3",
