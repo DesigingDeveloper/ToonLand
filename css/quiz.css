@@ -522,7 +522,7 @@ footer button.show {
     }
 
     .quiz_box header .title {
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
     }
 
@@ -541,7 +541,7 @@ footer button.show {
 
     .quiz_box header .timer .time_left_txt {
         font-weight: 400;
-        font-size: 17px;
+        font-size: 15px;
         user-select: none;
     }
 
@@ -573,7 +573,7 @@ footer button.show {
     }
 
     section .que_text {
-        font-size: 25px;
+        font-size: 15px;
         font-weight: 600;
     }
 
@@ -587,7 +587,7 @@ footer button.show {
         border: 1px solid #84c5fe;
         border-radius: 5px;
         padding: 8px 15px;
-        font-size: 17px;
+        font-size: 12px;
         margin-bottom: 15px;
         cursor: pointer;
         transition: all 0.3s ease;
