@@ -6,4 +6,6 @@
     color: rgb(41, 3, 3);
     text-decoration: none;
     line-height: 2rem;
+    animation: blink 1.5s infinite;
+    animation-fill-mode: both;
 }

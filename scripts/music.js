@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
         var track_name = document.createTextNode(s[1]);
 
         var listItem = document.createElement('div');
-        var artist_text = document.createElement('p');
-        var track_text = document.createElement('p');
+        var artist_text = document.createElement('h3');
+        var track_text = document.createElement('h4');
 
         artist_text.appendChild(artist);
         track_text.appendChild(track_name);
