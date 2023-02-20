@@ -7,6 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToonLand</title>
 
+
+    <!-- ========Bootstrap Links============= -->
+    <!-- BootStarp CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Social Media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Sidebar CDN -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
     <link rel="shortcut icon" href="./Assets/Logo2.png" type="image/x-icon" width="100%" height="100%">
 
     <link rel="stylesheet" href="/css/subscription.css">
@@ -29,32 +54,69 @@
             </div>
         </div>
 
+        <!-- <div class="title">Subscribe us</div>
+        <div class="container">
+            <form id="contactForm" method="POST" action="./download.html">
+                <div class="alert">Your message sent</div>
+
+                <div class="inputBox">
+                    <input type="text" id="name" placeholder="Your name" required />
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" id="emailid" placeholder="Your Email" required />
+                </div>
+
+                <div class="inputBox">
+                    <input type="tel" id="contactNo" placeholder="Contact No." required />
+                </div>
+                
+                <div class="inputBox">
+                    <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+
+                <div class="inputBox">
+                    <a href="/download.html">
+                        <button type="submit" onclick="submitBtn()">Submit</button>
+                    </a>
+                </div>
+
+
+
+            </form>
+        </div> -->
+
         <div class="title">Subscribe ToonLand</div>
         <div class="content">
-            <form action="#">
+            <form action="./download.html" id="myform" s>
                 <div class="user-details">
                     <div class="input-box">
-                        <span class="details">Full Name</span>
+                        <span class="details" id="name">Full Name</span>
                         <input type="text" placeholder="Enter your name" required>
                     </div>
 
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="email" id="emailid" placeholder="Enter your email" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Phone Number</span>
-                        <input type="text" placeholder="Enter your number" required>
+                        <input type="tel" id="contactNo" placeholder="Enter your number" required>
                     </div>
 
                 </div>
 
-                <div class="button" onclick="window.location.href='/download.html';">
-                    <input type="submit" value="Register">
+                <div class="button">
+                    <input type="submit" value="Submit & download">
                 </div>
             </form>
         </div>
+
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="/scripts/mail.js"></script>
 </body>
 
 </html>
