@@ -39,7 +39,19 @@
     <link rel="stylesheet" href="/css/header.css">
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0; padding: 0;">
+    <!--============ Start Preloader ==============-->
+
+
+    <div id="loader">
+        <video autoplay muted>
+            <source src="/Assets/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+        </video>
+    </div>
+    </div>
+
+    <!--============ End Preloader ==============-->
+
     <!--================ Start Header Area =================-->
     <div class="container-fluid">
         <div class="row justify-content-md-center">
@@ -186,6 +198,20 @@
             </div>
     </div> -->
     <!-- ========== End Footer ============== -->
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
 </body>
 
 </html>
