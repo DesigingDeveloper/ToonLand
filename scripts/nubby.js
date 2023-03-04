@@ -1,5 +1,5 @@
 //selecting all required elements
-const start_btn = document.querySelector(".start_btn button");
+const start_btn1 = document.querySelector(".start_btn1 button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
@@ -11,7 +11,7 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
 // if startQuiz button clicked
-start_btn.onclick = () => {
+start_btn1.onclick = () => {
     info_box.classList.add("activeInfo"); //show info box
 }
 
@@ -207,6 +207,6 @@ function startTimerLine(time) {
 
 function queCounter(index) {
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p> Questions</span>';
+    let totalQueCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p> questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
