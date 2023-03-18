@@ -163,4 +163,11 @@ body {
     background-color: rgba(255, 255, 255, 0);
     margin-top: 1rem;
     margin-left: 1rem;
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    border: none;
+    outline: none;
 }
